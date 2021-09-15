@@ -1,0 +1,5 @@
+*.stl
+*.nii
+node_modules
+.idea
+*.bundle.js

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Visual Behavior &mdash; Javascript NIFTI Slicer</title>
+		<style>
+			body { margin: 0; }
+		</style>
+    </head>
+	<body>
+
+
+        <div id="select" style="font-family:sans-serif">
+            <h3>Visual Behavior &mdash; Javascript NIFTI Slicer</h3>
+            <hr />
+        </div>
+
+        <div>
+            Axe X : <input type="range" min="0" max="100" value="50" class="slider" id="yz">
+            Axe Y : <input type="range" min="0" max="100" value="50" class="slider" id="xz">
+            Axe Z : <input type="range" min="0" max="100" value="50" class="slider" id="xy">
+            Axe C : <input type="range" min="-50" max="50" value="0" class="slider" id="custom">
+        </div>
+
+        <script src="main.bundle.js"></script>
+
+	</body>
+</html>
