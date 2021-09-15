@@ -11,5 +11,11 @@ browserify worker.js -o worker.bundle.js
 ```
 http-server
 ```
-
-and open browser at: 127.0.0.1:8080
+```
+add Bassin_simplifiee.stl
+add Fémur droit_simplifiee.stl
+add Fémur gauche_simplifiee.stl
+```
+ ```
+open browser at: 127.0.0.1:8080
+```
