@@ -67,6 +67,8 @@ function generateReader() {
                 scene.add(mesh);
                 scene.add(new THREE.AxesHelper(500));
 
+                renderer.render(scene, camera);
+
                 for (var i = 0; i < 3; i++) {
                     let plane = PLANES[i];
 
@@ -110,9 +112,9 @@ function generateReader() {
 
             });
 
-            loader.load('./Bassin_simplifiee.stl', addGeometry)
-            loader.load('./Fémur droit_simplifiee.stl', addGeometry)
-            loader.load('./Fémur gauche_simplifiee.stl', addGeometry)
+            loader.load('./pelvis.stl', addGeometry)
+            loader.load('./femur_right.stl', addGeometry)
+            loader.load('./femur_left.stl', addGeometry)
         }
     };
     return reader

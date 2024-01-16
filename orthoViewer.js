@@ -70,7 +70,7 @@ class OrthoViewer {
         if (this.running) return
 
         //Apply mesh matrix to express points in local mesh coordinate (pixels)
-        var local_points = points.map(v =>new THREE.Vector3(v[0], v[1], v[2]).applyMatrix4(this.mesh.matrix.clone().invert()).toArray())
+        var local_points = points.map(v =>new THREE.Vector3(v[0], v[1], v[2]).applyMatrix4(this.mesh.matrixWorld.clone().invert()).toArray())
 
         console.log("local_points : ", local_points)
         this.worker.postMessage(["slice_plane", [local_points, distance] ]);
